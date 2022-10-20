@@ -1,5 +1,5 @@
+import applyToConsole from './scripts/applyToConsole.js';
 import counter from './scripts/counter.js';
-
 const regex = new RegExp(/^[A-Za-z0-9_.]+$/);
 
 /**
@@ -22,3 +22,5 @@ const kitchenlight = {
 }
 
 export default kitchenlight;
+
+applyToConsole();
