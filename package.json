@@ -1,6 +1,6 @@
 {
   "name": "kitchenlight",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a small developer tool to help you debug everything but the kitchen sink",
   "main": "src/index.js",
   "type": "module",
