@@ -1,0 +1,29 @@
+{
+  "name": "kitchenlight",
+  "version": "0.0.1",
+  "description": "a small developer tool to help you debug everything but the kitchen sink",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enbytedev/kitchenlight.git"
+  },
+  "keywords": [
+    "debug"
+  ],
+  "author": "enbytedev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enbytedev/kitchenlight/issues"
+  },
+  "homepage": "https://github.com/enbytedev/kitchenlight#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  },
+  "dependencies": {
+    "confectionery": "^1.0.2"
+  }
+}
