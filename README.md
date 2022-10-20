@@ -35,4 +35,42 @@ counter1.take("Decrementing the counter. This field is optional.");
 ```
 Result:
 
-<a><img src="https://github.com/enbytedev/kitchenlight/blob/main/example.png" width="621" height="204" /></a>
+<a><img src="https://github.com/enbytedev/kitchenlight/blob/main/img/counter.png" width="621" height="204" /></a>
+
+### Watch
+To watch a function, enter it in via `const function = kitchenlight.watch(function, "Watching The Function");`
+
+This will create a wrapper and alert stdout on each invocation.
+Example:
+```js
+function hello(arg) {
+    console.log("Hello", arg);
+}
+
+hello = console.watch(hello, "Hello Function");
+
+hello("World")
+```
+Result:
+
+<a><img src="https://github.com/enbytedev/kitchenlight/blob/main/img/watch.png" width="727" height="78" /></a>
+
+### Peek
+Peek allows a quick look at object and JSON strings. `kitchenlight.peek(object);`
+
+Example: 
+```js
+let obj = {
+    name: "John",
+    age: 20,
+    dog: {
+        name: "Jimmy",
+        age: 4
+    }
+}
+
+kitchenlight.peek(obj);
+```
+Result:
+
+<a><img src="https://github.com/enbytedev/kitchenlight/blob/main/img/peek.png" width="604" height="210" /></a>

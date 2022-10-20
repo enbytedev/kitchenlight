@@ -5,6 +5,7 @@ function applyToConsole() {
     console.tick = function(context) { gCounter.tick(context, 3) }
     console.take = function(context) { gCounter.take(context, 3) }
     console.peek = function(item) { kitchenlight.peek(item, 4) }
+    console.watch = function(target, title) { return kitchenlight.watch(target, title, 4) }
 }
 
 export default applyToConsole;

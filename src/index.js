@@ -1,6 +1,7 @@
 import applyToConsole from './scripts/applyToConsole.js';
 import counter from './scripts/counter.js';
 import peek from './scripts/peek.js';
+import watch from './scripts/watch.js';
 const regex = new RegExp(/^[A-Za-z0-9_.]+$/);
 
 /**
@@ -26,6 +27,10 @@ const kitchenlight = {
         } else {
             throw new Error('Invalid item!');
         }
+    },
+    watch: (target, title) => {
+        if (typeof target !== "function") { throw new Error('Invalid target!');}
+        return new Proxy(target, watch(target, title));
     }
 }
 
