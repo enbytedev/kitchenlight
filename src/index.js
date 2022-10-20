@@ -1,5 +1,6 @@
 import applyToConsole from './scripts/applyToConsole.js';
 import counter from './scripts/counter.js';
+import peek from './scripts/peek.js';
 const regex = new RegExp(/^[A-Za-z0-9_.]+$/);
 
 /**
@@ -19,6 +20,13 @@ const kitchenlight = {
             throw new Error('Invalid counter name!');
         }
     },
+    peek: (item, layer) => {
+        if (item !== undefined) {
+            return peek(item, layer);
+        } else {
+            throw new Error('Invalid item!');
+        }
+    }
 }
 
 export default kitchenlight;
