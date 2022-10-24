@@ -19,7 +19,9 @@ npm i -D kitchenlight
 ```
 
 ### Aliases
-As long as the package is imported, aliases are added to the console object. These include: console.tick, console.take, console.peek, console.watch! The counter for console is shared wherever it's used.
+As long as the package is imported, aliases can be added to the console object. These include: console.tick, console.take, console.peek, console.watch! The counter for console is shared wherever it's used.
+
+Apply it with: `kitchenlight.applyToConsole();`
 
 ### Counter
 To create a counter instance: `const debugCounter = kitchenlight.counter("Debug_Counter");`

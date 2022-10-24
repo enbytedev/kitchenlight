@@ -31,9 +31,10 @@ const kitchenlight = {
     watch: (target, title) => {
         if (typeof target !== "function") { throw new Error('Invalid target!');}
         return new Proxy(target, watch(target, title));
+    },
+    applyToConsole: () => {
+        applyToConsole();
     }
 }
 
 export default kitchenlight;
-
-applyToConsole();
