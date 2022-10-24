@@ -23,6 +23,16 @@ As long as the package is imported, aliases can be added to the console object. 
 
 Apply it with: `kitchenlight.applyToConsole();`
 
+To enable TypeScript support, add the following to your project's `d.ts`:
+```ts
+interface Console {
+    tick: any,
+    take: any,
+    peek: any,
+    watch: any,
+}
+```
+
 ### Counter
 To create a counter instance: `const debugCounter = kitchenlight.counter("Debug_Counter");`
 
